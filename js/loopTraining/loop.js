@@ -78,5 +78,12 @@ function exersiseTwo(){
         }
     }
 
-    // tbd. Komma am Ende der Strings entferen
+    //", " am Ende der Strings entferen
+    if("," === refused.textContent[refused.textContent.length-2]){
+        refused.textContent = refused.textContent.substring(0,refused.textContent.length - 2);
+    }
+
+    if("," === admitted.textContent[admitted.textContent.length-2]){
+        admitted.textContent = admitted.textContent.substring(0, admitted.textContent.length - 2);
+    }
  }
