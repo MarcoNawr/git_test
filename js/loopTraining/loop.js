@@ -87,3 +87,22 @@ function exersiseTwo(){
         admitted.textContent = admitted.textContent.substring(0, admitted.textContent.length - 2);
     }
  }
+
+
+ // ###############################
+ // Übung 3
+ // ##############################
+
+ function exerciseThree(){
+    const myArray = ['tomatoes', 'chick peas', 'onions', 'rice', 'black beans'];
+    const list = document.createElement('ul');
+
+    for(const element of myArray){
+        let li = document.createElement('li'); // Listelement erstellen
+        li.appendChild(document.createTextNode(element)); // definieren was das Listelemt ist
+        list.appendChild(li);    // das Listelement der UL zuordnen
+    }
+
+    const section = document.querySelector('section');
+    section.appendChild(list);
+ }
